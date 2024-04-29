@@ -40,6 +40,8 @@ namespace BlitzMemoryNotes
             targetRTB_2L.Text = copiedText;
             copiedText = CopyFirstLetter(sourceRichTextBox.Text);
             targetRTB_1L.Text = copiedText;
+            validationRTB_1L.Text = String.Empty;
+            validationRTB_2L.Text = String.Empty;
         }
         private string CopyFirstAndLastLetters(string text)
         {
@@ -121,6 +123,7 @@ namespace BlitzMemoryNotes
             {
                 sourceRichTextBox.Text = "";
 
+                sourceRichTextBox.ForeColor = Color.Black;
 
             }
         }

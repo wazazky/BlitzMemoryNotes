@@ -148,6 +148,7 @@
             this.progressBarL2.MouseState = MaterialSkin.MouseState.HOVER;
             this.progressBarL2.Name = "progressBarL2";
             this.progressBarL2.Size = new System.Drawing.Size(960, 5);
+            this.progressBarL2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBarL2.TabIndex = 7;
             // 
             // tabPage2
