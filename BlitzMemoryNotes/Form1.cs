@@ -105,6 +105,11 @@ namespace BlitzMemoryNotes
         {   
             progressBar.Maximum=str1.Length;
             progressBar.Value =str2.Length ;
+
+            if (str2==str1) {
+              MessageBox.Show("Bien Hecho", "Correcto");
+                tabPage1.Focus();
+            }
         }
 
        
