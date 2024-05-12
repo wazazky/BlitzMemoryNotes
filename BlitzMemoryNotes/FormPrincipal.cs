@@ -15,9 +15,9 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 namespace BlitzMemoryNotes
 {
-    public partial class Form1 : MaterialForm
+    public partial class FormPrincipal : MaterialForm
     {
-        public Form1()
+        public FormPrincipal()
         {
             InitializeComponent();
             //progressBarL1.MaximumSize = targetRTB_1L.Size;
@@ -27,6 +27,13 @@ namespace BlitzMemoryNotes
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+        }
+        private void IniMaterial_NM()
+        {
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -131,6 +138,42 @@ namespace BlitzMemoryNotes
                 sourceRichTextBox.ForeColor = Color.Black;
 
             }
+        }
+
+        private void Switch_NM_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Switch_NM.Checked == true)
+            {
+                IniMaterial_NM();
+            }
+            if (Switch_NM.Checked == false)
+            {
+                IniMaterial();
+
+            }
+        }
+
+        private void FAButton_Borrar_Base_Click(object sender, EventArgs e)
+        {
+            sourceRichTextBox.Text=string.Empty;
+        }
+
+        private void FAButton_Borrar_2L_Click(object sender, EventArgs e)
+        {
+            validationRTB_2L.Text = string.Empty;
+        }
+
+        private void FAButton_Borrar_1L_Click(object sender, EventArgs e)
+        {
+            validationRTB_1L.Text = string.Empty;   
+        }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            FormQR formulario = new FormQR();
+
+            // Mostrar el formulario
+            formulario.Show();
         }
     }
 }

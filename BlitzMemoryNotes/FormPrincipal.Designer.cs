@@ -1,6 +1,6 @@
 ﻿namespace BlitzMemoryNotes
 {
-    partial class Form1
+    partial class FormPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.sourceRichTextBox = new System.Windows.Forms.RichTextBox();
             this.targetRTB_2L = new System.Windows.Forms.RichTextBox();
             this.validationRTB_2L = new System.Windows.Forms.RichTextBox();
@@ -36,13 +36,15 @@
             this.validationRTB_1L = new System.Windows.Forms.RichTextBox();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.FAButton_Borrar_1L = new MaterialSkin.Controls.MaterialFloatingActionButton();
+            this.FAButton_Borrar_2L = new MaterialSkin.Controls.MaterialFloatingActionButton();
+            this.FAButton_Borrar_Base = new MaterialSkin.Controls.MaterialFloatingActionButton();
+            this.Switch_NM = new MaterialSkin.Controls.MaterialSwitch();
             this.progressBarL1 = new MaterialSkin.Controls.MaterialProgressBar();
             this.progressBarL2 = new MaterialSkin.Controls.MaterialProgressBar();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.materialSwitch1 = new MaterialSkin.Controls.MaterialSwitch();
-            this.materialFloatingActionButton1 = new MaterialSkin.Controls.MaterialFloatingActionButton();
-            this.materialFloatingActionButton2 = new MaterialSkin.Controls.MaterialFloatingActionButton();
-            this.materialFloatingActionButton3 = new MaterialSkin.Controls.MaterialFloatingActionButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -119,10 +121,12 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.materialFloatingActionButton3);
-            this.tabPage1.Controls.Add(this.materialFloatingActionButton2);
-            this.tabPage1.Controls.Add(this.materialFloatingActionButton1);
-            this.tabPage1.Controls.Add(this.materialSwitch1);
+            this.tabPage1.Controls.Add(this.materialLabel1);
+            this.tabPage1.Controls.Add(this.materialButton1);
+            this.tabPage1.Controls.Add(this.FAButton_Borrar_1L);
+            this.tabPage1.Controls.Add(this.FAButton_Borrar_2L);
+            this.tabPage1.Controls.Add(this.FAButton_Borrar_Base);
+            this.tabPage1.Controls.Add(this.Switch_NM);
             this.tabPage1.Controls.Add(this.progressBarL1);
             this.tabPage1.Controls.Add(this.progressBarL2);
             this.tabPage1.Controls.Add(this.validationRTB_1L);
@@ -130,6 +134,7 @@
             this.tabPage1.Controls.Add(this.validationRTB_2L);
             this.tabPage1.Controls.Add(this.targetRTB_2L);
             this.tabPage1.Controls.Add(this.sourceRichTextBox);
+            this.tabPage1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -137,6 +142,96 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(3, 82);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(107, 19);
+            this.materialLabel1.TabIndex = 14;
+            this.materialLabel1.Text = "materialLabel1";
+            // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(248, 15);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(158, 36);
+            this.materialButton1.TabIndex = 13;
+            this.materialButton1.Text = "materialButton1";
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = true;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
+            // 
+            // FAButton_Borrar_1L
+            // 
+            this.FAButton_Borrar_1L.Depth = 0;
+            this.FAButton_Borrar_1L.Icon = ((System.Drawing.Image)(resources.GetObject("FAButton_Borrar_1L.Icon")));
+            this.FAButton_Borrar_1L.Location = new System.Drawing.Point(202, 551);
+            this.FAButton_Borrar_1L.Mini = true;
+            this.FAButton_Borrar_1L.MouseState = MaterialSkin.MouseState.HOVER;
+            this.FAButton_Borrar_1L.Name = "FAButton_Borrar_1L";
+            this.FAButton_Borrar_1L.Size = new System.Drawing.Size(40, 40);
+            this.FAButton_Borrar_1L.TabIndex = 12;
+            this.FAButton_Borrar_1L.Text = "materialFloatingActionButton3";
+            this.FAButton_Borrar_1L.UseVisualStyleBackColor = true;
+            this.FAButton_Borrar_1L.Click += new System.EventHandler(this.FAButton_Borrar_1L_Click);
+            // 
+            // FAButton_Borrar_2L
+            // 
+            this.FAButton_Borrar_2L.Depth = 0;
+            this.FAButton_Borrar_2L.Icon = ((System.Drawing.Image)(resources.GetObject("FAButton_Borrar_2L.Icon")));
+            this.FAButton_Borrar_2L.Location = new System.Drawing.Point(202, 316);
+            this.FAButton_Borrar_2L.Mini = true;
+            this.FAButton_Borrar_2L.MouseState = MaterialSkin.MouseState.HOVER;
+            this.FAButton_Borrar_2L.Name = "FAButton_Borrar_2L";
+            this.FAButton_Borrar_2L.Size = new System.Drawing.Size(40, 40);
+            this.FAButton_Borrar_2L.TabIndex = 11;
+            this.FAButton_Borrar_2L.Text = "materialFloatingActionButton2";
+            this.FAButton_Borrar_2L.UseVisualStyleBackColor = true;
+            this.FAButton_Borrar_2L.Click += new System.EventHandler(this.FAButton_Borrar_2L_Click);
+            // 
+            // FAButton_Borrar_Base
+            // 
+            this.FAButton_Borrar_Base.Depth = 0;
+            this.FAButton_Borrar_Base.Icon = ((System.Drawing.Image)(resources.GetObject("FAButton_Borrar_Base.Icon")));
+            this.FAButton_Borrar_Base.Location = new System.Drawing.Point(202, 79);
+            this.FAButton_Borrar_Base.Mini = true;
+            this.FAButton_Borrar_Base.MouseState = MaterialSkin.MouseState.HOVER;
+            this.FAButton_Borrar_Base.Name = "FAButton_Borrar_Base";
+            this.FAButton_Borrar_Base.Size = new System.Drawing.Size(40, 40);
+            this.FAButton_Borrar_Base.TabIndex = 10;
+            this.FAButton_Borrar_Base.Text = "materialFloatingActionButton1";
+            this.FAButton_Borrar_Base.UseVisualStyleBackColor = true;
+            this.FAButton_Borrar_Base.Click += new System.EventHandler(this.FAButton_Borrar_Base_Click);
+            // 
+            // Switch_NM
+            // 
+            this.Switch_NM.AutoSize = true;
+            this.Switch_NM.Depth = 0;
+            this.Switch_NM.Location = new System.Drawing.Point(1035, 16);
+            this.Switch_NM.Margin = new System.Windows.Forms.Padding(0);
+            this.Switch_NM.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.Switch_NM.MouseState = MaterialSkin.MouseState.HOVER;
+            this.Switch_NM.Name = "Switch_NM";
+            this.Switch_NM.Ripple = true;
+            this.Switch_NM.Size = new System.Drawing.Size(168, 37);
+            this.Switch_NM.TabIndex = 9;
+            this.Switch_NM.Text = "Modo Nocturno";
+            this.Switch_NM.UseVisualStyleBackColor = true;
+            this.Switch_NM.CheckedChanged += new System.EventHandler(this.Switch_NM_CheckedChanged);
             // 
             // progressBarL1
             // 
@@ -169,58 +264,7 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // materialSwitch1
-            // 
-            this.materialSwitch1.AutoSize = true;
-            this.materialSwitch1.Depth = 0;
-            this.materialSwitch1.Location = new System.Drawing.Point(1035, 16);
-            this.materialSwitch1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialSwitch1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialSwitch1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSwitch1.Name = "materialSwitch1";
-            this.materialSwitch1.Ripple = true;
-            this.materialSwitch1.Size = new System.Drawing.Size(173, 37);
-            this.materialSwitch1.TabIndex = 9;
-            this.materialSwitch1.Text = "materialSwitch1";
-            this.materialSwitch1.UseVisualStyleBackColor = true;
-            // 
-            // materialFloatingActionButton1
-            // 
-            this.materialFloatingActionButton1.Depth = 0;
-            this.materialFloatingActionButton1.Icon = null;
-            this.materialFloatingActionButton1.Location = new System.Drawing.Point(186, 79);
-            this.materialFloatingActionButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFloatingActionButton1.Name = "materialFloatingActionButton1";
-            this.materialFloatingActionButton1.Size = new System.Drawing.Size(56, 56);
-            this.materialFloatingActionButton1.TabIndex = 10;
-            this.materialFloatingActionButton1.Text = "materialFloatingActionButton1";
-            this.materialFloatingActionButton1.UseVisualStyleBackColor = true;
-            // 
-            // materialFloatingActionButton2
-            // 
-            this.materialFloatingActionButton2.Depth = 0;
-            this.materialFloatingActionButton2.Icon = null;
-            this.materialFloatingActionButton2.Location = new System.Drawing.Point(186, 316);
-            this.materialFloatingActionButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFloatingActionButton2.Name = "materialFloatingActionButton2";
-            this.materialFloatingActionButton2.Size = new System.Drawing.Size(56, 56);
-            this.materialFloatingActionButton2.TabIndex = 11;
-            this.materialFloatingActionButton2.Text = "materialFloatingActionButton2";
-            this.materialFloatingActionButton2.UseVisualStyleBackColor = true;
-            // 
-            // materialFloatingActionButton3
-            // 
-            this.materialFloatingActionButton3.Depth = 0;
-            this.materialFloatingActionButton3.Icon = null;
-            this.materialFloatingActionButton3.Location = new System.Drawing.Point(186, 551);
-            this.materialFloatingActionButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFloatingActionButton3.Name = "materialFloatingActionButton3";
-            this.materialFloatingActionButton3.Size = new System.Drawing.Size(56, 56);
-            this.materialFloatingActionButton3.TabIndex = 12;
-            this.materialFloatingActionButton3.Text = "materialFloatingActionButton3";
-            this.materialFloatingActionButton3.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // FormPrincipal
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,7 +275,7 @@
             this.Controls.Add(this.materialTabControl1);
             this.DrawerTabControl = this.materialTabControl1;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Blitz Memory Notes";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -254,10 +298,12 @@
         private System.Windows.Forms.TabPage tabPage2;
         private MaterialSkin.Controls.MaterialProgressBar progressBarL1;
         private MaterialSkin.Controls.MaterialProgressBar progressBarL2;
-        private MaterialSkin.Controls.MaterialSwitch materialSwitch1;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton3;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton2;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton1;
+        private MaterialSkin.Controls.MaterialSwitch Switch_NM;
+        private MaterialSkin.Controls.MaterialFloatingActionButton FAButton_Borrar_1L;
+        private MaterialSkin.Controls.MaterialFloatingActionButton FAButton_Borrar_2L;
+        private MaterialSkin.Controls.MaterialFloatingActionButton FAButton_Borrar_Base;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }
 
