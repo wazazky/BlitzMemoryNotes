@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="FAButton_Borrar_1L.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAASJJREFUSEvdlU1KBEEMRhtEz+JCV+NOPYQ/g3dSb6HokVTU7YjuRPf6HtgQqtLV
+        DgAACw4BQL7hQQAAASJJREFUSEvdlU1KBEEMRhtEz+JCV+NOPYQ/g3dSb6HokVTU7YjuRPf6HtgQqtLV
         My2zmQ8eU6STVJGqZLqN1w5cwD08wvcfru/Ab/pM0jm8ws8I+pzC0tqCa8iStbgCY0c1JXmPmzR1Blng
         KgyWy8sqa34IB/AebD3aZnAUbPIC6cX7IqKjmEDtQdzEtTblAWKMzKGST7F0/IB9ULuwgNL2BmXcLVR6
         gtJR4mn9jeusdGKfVPqCzFniqdXQyXvMVWnVDSxX5iufUGntJXK2lI7ZhWYXX8bdQKW1P9Os0WyiVqP5
@@ -129,10 +132,13 @@
         qut+Ac1LB+r0oACPAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="FAButton_Borrar_2L.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAASJJREFUSEvdlU1KBEEMRhtEz+JCV+NOPYQ/g3dSb6HokVTU7YjuRPf6HtgQqtLV
+        DgAACw4BQL7hQQAAASJJREFUSEvdlU1KBEEMRhtEz+JCV+NOPYQ/g3dSb6HokVTU7YjuRPf6HtgQqtLV
         My2zmQ8eU6STVJGqZLqN1w5cwD08wvcfru/Ab/pM0jm8ws8I+pzC0tqCa8iStbgCY0c1JXmPmzR1Blng
         KgyWy8sqa34IB/AebD3aZnAUbPIC6cX7IqKjmEDtQdzEtTblAWKMzKGST7F0/IB9ULuwgNL2BmXcLVR6
         gtJR4mn9jeusdGKfVPqCzFniqdXQyXvMVWnVDSxX5iufUGntJXK2lI7ZhWYXX8bdQKW1P9Os0WyiVqP5
@@ -143,7 +149,7 @@
   <data name="FAButton_Borrar_Base.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAASJJREFUSEvdlU1KBEEMRhtEz+JCV+NOPYQ/g3dSb6HokVTU7YjuRPf6HtgQqtLV
+        DgAACw4BQL7hQQAAASJJREFUSEvdlU1KBEEMRhtEz+JCV+NOPYQ/g3dSb6HokVTU7YjuRPf6HtgQqtLV
         My2zmQ8eU6STVJGqZLqN1w5cwD08wvcfru/Ab/pM0jm8ws8I+pzC0tqCa8iStbgCY0c1JXmPmzR1Blng
         KgyWy8sqa34IB/AebD3aZnAUbPIC6cX7IqKjmEDtQdzEtTblAWKMzKGST7F0/IB9ULuwgNL2BmXcLVR6
         gtJR4mn9jeusdGKfVPqCzFniqdXQyXvMVWnVDSxX5iufUGntJXK2lI7ZhWYXX8bdQKW1P9Os0WyiVqP5

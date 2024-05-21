@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.sourceRichTextBox = new System.Windows.Forms.RichTextBox();
             this.targetRTB_2L = new System.Windows.Forms.RichTextBox();
@@ -36,6 +37,27 @@
             this.validationRTB_1L = new System.Windows.Forms.RichTextBox();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.materialSwitch_tb2 = new MaterialSkin.Controls.MaterialSwitch();
+            this.materialSwitch_tb1 = new MaterialSkin.Controls.MaterialSwitch();
+            this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel20 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.FAButton_Borrar_1L = new MaterialSkin.Controls.MaterialFloatingActionButton();
@@ -44,7 +66,7 @@
             this.Switch_NM = new MaterialSkin.Controls.MaterialSwitch();
             this.progressBarL1 = new MaterialSkin.Controls.MaterialProgressBar();
             this.progressBarL2 = new MaterialSkin.Controls.MaterialProgressBar();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +78,7 @@
             this.sourceRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sourceRichTextBox.ForeColor = System.Drawing.SystemColors.MenuText;
             this.sourceRichTextBox.Location = new System.Drawing.Point(248, 79);
+            this.sourceRichTextBox.MaxLength = 7000;
             this.sourceRichTextBox.Name = "sourceRichTextBox";
             this.sourceRichTextBox.Size = new System.Drawing.Size(960, 220);
             this.sourceRichTextBox.TabIndex = 0;
@@ -67,7 +90,7 @@
             // targetRTB_2L
             // 
             this.targetRTB_2L.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.targetRTB_2L.Location = new System.Drawing.Point(550, 4);
+            this.targetRTB_2L.Location = new System.Drawing.Point(378, 6);
             this.targetRTB_2L.Name = "targetRTB_2L";
             this.targetRTB_2L.Size = new System.Drawing.Size(216, 60);
             this.targetRTB_2L.TabIndex = 1;
@@ -88,7 +111,7 @@
             // targetRTB_1L
             // 
             this.targetRTB_1L.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.targetRTB_1L.Location = new System.Drawing.Point(772, 6);
+            this.targetRTB_1L.Location = new System.Drawing.Point(756, 6);
             this.targetRTB_1L.Name = "targetRTB_1L";
             this.targetRTB_1L.Size = new System.Drawing.Size(216, 58);
             this.targetRTB_1L.TabIndex = 3;
@@ -109,7 +132,6 @@
             // materialTabControl1
             // 
             this.materialTabControl1.Controls.Add(this.tabPage1);
-            this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Location = new System.Drawing.Point(9, 67);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -121,6 +143,27 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.materialSwitch_tb2);
+            this.tabPage1.Controls.Add(this.materialSwitch_tb1);
+            this.tabPage1.Controls.Add(this.materialLabel18);
+            this.tabPage1.Controls.Add(this.materialLabel19);
+            this.tabPage1.Controls.Add(this.materialLabel20);
+            this.tabPage1.Controls.Add(this.materialLabel15);
+            this.tabPage1.Controls.Add(this.materialLabel17);
+            this.tabPage1.Controls.Add(this.materialLabel16);
+            this.tabPage1.Controls.Add(this.materialLabel14);
+            this.tabPage1.Controls.Add(this.materialLabel13);
+            this.tabPage1.Controls.Add(this.materialLabel12);
+            this.tabPage1.Controls.Add(this.materialLabel4);
+            this.tabPage1.Controls.Add(this.materialLabel5);
+            this.tabPage1.Controls.Add(this.materialLabel6);
+            this.tabPage1.Controls.Add(this.materialLabel11);
+            this.tabPage1.Controls.Add(this.materialLabel10);
+            this.tabPage1.Controls.Add(this.materialLabel7);
+            this.tabPage1.Controls.Add(this.materialLabel8);
+            this.tabPage1.Controls.Add(this.materialLabel9);
+            this.tabPage1.Controls.Add(this.materialLabel3);
+            this.tabPage1.Controls.Add(this.materialLabel2);
             this.tabPage1.Controls.Add(this.materialLabel1);
             this.tabPage1.Controls.Add(this.materialButton1);
             this.tabPage1.Controls.Add(this.FAButton_Borrar_1L);
@@ -143,17 +186,309 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // materialSwitch_tb2
+            // 
+            this.materialSwitch_tb2.AutoSize = true;
+            this.materialSwitch_tb2.Depth = 0;
+            this.materialSwitch_tb2.Location = new System.Drawing.Point(597, 16);
+            this.materialSwitch_tb2.Margin = new System.Windows.Forms.Padding(0);
+            this.materialSwitch_tb2.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialSwitch_tb2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialSwitch_tb2.Name = "materialSwitch_tb2";
+            this.materialSwitch_tb2.Ripple = true;
+            this.materialSwitch_tb2.Size = new System.Drawing.Size(156, 37);
+            this.materialSwitch_tb2.TabIndex = 36;
+            this.materialSwitch_tb2.Text = "Ayuda 1 Letra";
+            this.materialSwitch_tb2.UseVisualStyleBackColor = true;
+            this.materialSwitch_tb2.CheckedChanged += new System.EventHandler(this.materialSwitch_tb2_CheckedChanged);
+            // 
+            // materialSwitch_tb1
+            // 
+            this.materialSwitch_tb1.AutoSize = true;
+            this.materialSwitch_tb1.Depth = 0;
+            this.materialSwitch_tb1.Location = new System.Drawing.Point(202, 16);
+            this.materialSwitch_tb1.Margin = new System.Windows.Forms.Padding(0);
+            this.materialSwitch_tb1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialSwitch_tb1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialSwitch_tb1.Name = "materialSwitch_tb1";
+            this.materialSwitch_tb1.Ripple = true;
+            this.materialSwitch_tb1.Size = new System.Drawing.Size(164, 37);
+            this.materialSwitch_tb1.TabIndex = 35;
+            this.materialSwitch_tb1.Text = "Ayuda 2 Letras";
+            this.materialSwitch_tb1.UseVisualStyleBackColor = true;
+            this.materialSwitch_tb1.CheckedChanged += new System.EventHandler(this.materialSwitch_tb1_CheckedChanged);
+            // 
+            // materialLabel18
+            // 
+            this.materialLabel18.AutoSize = true;
+            this.materialLabel18.Depth = 0;
+            this.materialLabel18.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel18.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel18.HighEmphasis = true;
+            this.materialLabel18.Location = new System.Drawing.Point(6, 719);
+            this.materialLabel18.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel18.Name = "materialLabel18";
+            this.materialLabel18.Size = new System.Drawing.Size(197, 24);
+            this.materialLabel18.TabIndex = 34;
+            this.materialLabel18.Text = "parentesis necesarios";
+            this.materialLabel18.UseAccent = true;
+            // 
+            // materialLabel19
+            // 
+            this.materialLabel19.AutoSize = true;
+            this.materialLabel19.Depth = 0;
+            this.materialLabel19.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel19.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel19.HighEmphasis = true;
+            this.materialLabel19.Location = new System.Drawing.Point(6, 697);
+            this.materialLabel19.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel19.Name = "materialLabel19";
+            this.materialLabel19.Size = new System.Drawing.Size(190, 24);
+            this.materialLabel19.TabIndex = 33;
+            this.materialLabel19.Text = "signos de puntuacion";
+            this.materialLabel19.UseAccent = true;
+            // 
+            // materialLabel20
+            // 
+            this.materialLabel20.AutoSize = true;
+            this.materialLabel20.Depth = 0;
+            this.materialLabel20.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel20.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel20.HighEmphasis = true;
+            this.materialLabel20.Location = new System.Drawing.Point(6, 673);
+            this.materialLabel20.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel20.Name = "materialLabel20";
+            this.materialLabel20.Size = new System.Drawing.Size(167, 24);
+            this.materialLabel20.TabIndex = 32;
+            this.materialLabel20.Text = "recuerda poner los";
+            this.materialLabel20.UseAccent = true;
+            // 
+            // materialLabel15
+            // 
+            this.materialLabel15.AutoSize = true;
+            this.materialLabel15.Depth = 0;
+            this.materialLabel15.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel15.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel15.HighEmphasis = true;
+            this.materialLabel15.Location = new System.Drawing.Point(6, 512);
+            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel15.Name = "materialLabel15";
+            this.materialLabel15.Size = new System.Drawing.Size(197, 24);
+            this.materialLabel15.TabIndex = 31;
+            this.materialLabel15.Text = "parentesis necesarios";
+            this.materialLabel15.UseAccent = true;
+            // 
+            // materialLabel17
+            // 
+            this.materialLabel17.AutoSize = true;
+            this.materialLabel17.Depth = 0;
+            this.materialLabel17.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel17.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel17.HighEmphasis = true;
+            this.materialLabel17.Location = new System.Drawing.Point(6, 490);
+            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel17.Name = "materialLabel17";
+            this.materialLabel17.Size = new System.Drawing.Size(190, 24);
+            this.materialLabel17.TabIndex = 30;
+            this.materialLabel17.Text = "signos de puntuacion";
+            this.materialLabel17.UseAccent = true;
+            // 
+            // materialLabel16
+            // 
+            this.materialLabel16.AutoSize = true;
+            this.materialLabel16.Depth = 0;
+            this.materialLabel16.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel16.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel16.HighEmphasis = true;
+            this.materialLabel16.Location = new System.Drawing.Point(6, 466);
+            this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel16.Name = "materialLabel16";
+            this.materialLabel16.Size = new System.Drawing.Size(167, 24);
+            this.materialLabel16.TabIndex = 29;
+            this.materialLabel16.Text = "recuerda poner los";
+            this.materialLabel16.UseAccent = true;
+            // 
+            // materialLabel14
+            // 
+            this.materialLabel14.AutoSize = true;
+            this.materialLabel14.Depth = 0;
+            this.materialLabel14.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel14.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel14.Location = new System.Drawing.Point(6, 490);
+            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel14.Name = "materialLabel14";
+            this.materialLabel14.Size = new System.Drawing.Size(190, 24);
+            this.materialLabel14.TabIndex = 30;
+            this.materialLabel14.Text = "signos de puntuacion";
+            // 
+            // materialLabel13
+            // 
+            this.materialLabel13.AutoSize = true;
+            this.materialLabel13.Depth = 0;
+            this.materialLabel13.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel13.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel13.Location = new System.Drawing.Point(6, 466);
+            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel13.Name = "materialLabel13";
+            this.materialLabel13.Size = new System.Drawing.Size(167, 24);
+            this.materialLabel13.TabIndex = 29;
+            this.materialLabel13.Text = "recuerda poner los";
+            // 
+            // materialLabel12
+            // 
+            this.materialLabel12.AutoSize = true;
+            this.materialLabel12.Depth = 0;
+            this.materialLabel12.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel12.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel12.Location = new System.Drawing.Point(6, 442);
+            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel12.Name = "materialLabel12";
+            this.materialLabel12.Size = new System.Drawing.Size(143, 24);
+            this.materialLabel12.TabIndex = 28;
+            this.materialLabel12.Text = "de cada palabra";
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel4.Location = new System.Drawing.Point(6, 418);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(118, 24);
+            this.materialLabel4.TabIndex = 27;
+            this.materialLabel4.Text = "y ultima letra";
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel5.Location = new System.Drawing.Point(6, 394);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(137, 24);
+            this.materialLabel5.TabIndex = 26;
+            this.materialLabel5.Text = "la primera letra";
+            // 
+            // materialLabel6
+            // 
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel6.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel6.Location = new System.Drawing.Point(6, 375);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(207, 24);
+            this.materialLabel6.TabIndex = 25;
+            this.materialLabel6.Text = "solo tienes que escribir";
+            // 
+            // materialLabel11
+            // 
+            this.materialLabel11.AutoSize = true;
+            this.materialLabel11.Depth = 0;
+            this.materialLabel11.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel11.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel11.Location = new System.Drawing.Point(6, 356);
+            this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel11.Name = "materialLabel11";
+            this.materialLabel11.Size = new System.Drawing.Size(156, 24);
+            this.materialLabel11.TabIndex = 24;
+            this.materialLabel11.Text = "En este recuadro ";
+            // 
+            // materialLabel10
+            // 
+            this.materialLabel10.AutoSize = true;
+            this.materialLabel10.Depth = 0;
+            this.materialLabel10.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel10.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel10.Location = new System.Drawing.Point(6, 649);
+            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel10.Name = "materialLabel10";
+            this.materialLabel10.Size = new System.Drawing.Size(143, 24);
+            this.materialLabel10.TabIndex = 23;
+            this.materialLabel10.Text = "de cada palabra";
+            // 
+            // materialLabel7
+            // 
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel7.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel7.Location = new System.Drawing.Point(6, 625);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(137, 24);
+            this.materialLabel7.TabIndex = 22;
+            this.materialLabel7.Text = "la primera letra";
+            // 
+            // materialLabel8
+            // 
+            this.materialLabel8.AutoSize = true;
+            this.materialLabel8.Depth = 0;
+            this.materialLabel8.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel8.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel8.Location = new System.Drawing.Point(6, 606);
+            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel8.Name = "materialLabel8";
+            this.materialLabel8.Size = new System.Drawing.Size(207, 24);
+            this.materialLabel8.TabIndex = 21;
+            this.materialLabel8.Text = "solo tienes que escribir";
+            // 
+            // materialLabel9
+            // 
+            this.materialLabel9.AutoSize = true;
+            this.materialLabel9.Depth = 0;
+            this.materialLabel9.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel9.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel9.Location = new System.Drawing.Point(6, 587);
+            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel9.Name = "materialLabel9";
+            this.materialLabel9.Size = new System.Drawing.Size(156, 24);
+            this.materialLabel9.TabIndex = 20;
+            this.materialLabel9.Text = "En este recuadro ";
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel3.Location = new System.Drawing.Point(6, 167);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(102, 24);
+            this.materialLabel3.TabIndex = 16;
+            this.materialLabel3.Text = "memorizar ";
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel2.Location = new System.Drawing.Point(6, 143);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(177, 24);
+            this.materialLabel2.TabIndex = 15;
+            this.materialLabel2.Text = "el texto que quieras";
+            // 
             // materialLabel1
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(3, 82);
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel1.Location = new System.Drawing.Point(6, 124);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(107, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(221, 24);
             this.materialLabel1.TabIndex = 14;
-            this.materialLabel1.Text = "materialLabel1";
+            this.materialLabel1.Text = "En este recuadro escribe";
             // 
             // materialButton1
             // 
@@ -162,14 +497,15 @@
             this.materialButton1.Depth = 0;
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(248, 15);
+            this.materialButton1.Location = new System.Drawing.Point(15, 17);
             this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
             this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(158, 36);
+            this.materialButton1.Size = new System.Drawing.Size(113, 36);
             this.materialButton1.TabIndex = 13;
-            this.materialButton1.Text = "materialButton1";
+            this.materialButton1.Text = "Mostrar QR";
+            this.toolTip1.SetToolTip(this.materialButton1, "Genera un codigo QR que puedes escanear ");
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton1.UseAccentColor = true;
             this.materialButton1.UseVisualStyleBackColor = true;
@@ -186,6 +522,7 @@
             this.FAButton_Borrar_1L.Size = new System.Drawing.Size(40, 40);
             this.FAButton_Borrar_1L.TabIndex = 12;
             this.FAButton_Borrar_1L.Text = "materialFloatingActionButton3";
+            this.toolTip1.SetToolTip(this.FAButton_Borrar_1L, "Presiona para Borrar");
             this.FAButton_Borrar_1L.UseVisualStyleBackColor = true;
             this.FAButton_Borrar_1L.Click += new System.EventHandler(this.FAButton_Borrar_1L_Click);
             // 
@@ -200,6 +537,7 @@
             this.FAButton_Borrar_2L.Size = new System.Drawing.Size(40, 40);
             this.FAButton_Borrar_2L.TabIndex = 11;
             this.FAButton_Borrar_2L.Text = "materialFloatingActionButton2";
+            this.toolTip1.SetToolTip(this.FAButton_Borrar_2L, "Presiona para Borrar");
             this.FAButton_Borrar_2L.UseVisualStyleBackColor = true;
             this.FAButton_Borrar_2L.Click += new System.EventHandler(this.FAButton_Borrar_2L_Click);
             // 
@@ -214,6 +552,7 @@
             this.FAButton_Borrar_Base.Size = new System.Drawing.Size(40, 40);
             this.FAButton_Borrar_Base.TabIndex = 10;
             this.FAButton_Borrar_Base.Text = "materialFloatingActionButton1";
+            this.toolTip1.SetToolTip(this.FAButton_Borrar_Base, "Presiona para Borrar");
             this.FAButton_Borrar_Base.UseVisualStyleBackColor = true;
             this.FAButton_Borrar_Base.Click += new System.EventHandler(this.FAButton_Borrar_Base_Click);
             // 
@@ -254,16 +593,6 @@
             this.progressBarL2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBarL2.TabIndex = 7;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1214, 784);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // FormPrincipal
             // 
             this.AllowDrop = true;
@@ -295,7 +624,6 @@
         private System.Windows.Forms.RichTextBox validationRTB_1L;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private MaterialSkin.Controls.MaterialProgressBar progressBarL1;
         private MaterialSkin.Controls.MaterialProgressBar progressBarL2;
         private MaterialSkin.Controls.MaterialSwitch Switch_NM;
@@ -303,7 +631,29 @@
         private MaterialSkin.Controls.MaterialFloatingActionButton FAButton_Borrar_2L;
         private MaterialSkin.Controls.MaterialFloatingActionButton FAButton_Borrar_Base;
         private MaterialSkin.Controls.MaterialButton materialButton1;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel7;
+        private MaterialSkin.Controls.MaterialLabel materialLabel8;
+        private MaterialSkin.Controls.MaterialLabel materialLabel9;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel6;
+        private MaterialSkin.Controls.MaterialLabel materialLabel11;
+        private MaterialSkin.Controls.MaterialLabel materialLabel10;
+        private MaterialSkin.Controls.MaterialLabel materialLabel12;
+        private MaterialSkin.Controls.MaterialLabel materialLabel18;
+        private MaterialSkin.Controls.MaterialLabel materialLabel19;
+        private MaterialSkin.Controls.MaterialLabel materialLabel20;
+        private MaterialSkin.Controls.MaterialLabel materialLabel15;
+        private MaterialSkin.Controls.MaterialLabel materialLabel17;
+        private MaterialSkin.Controls.MaterialLabel materialLabel16;
+        private MaterialSkin.Controls.MaterialLabel materialLabel14;
+        private MaterialSkin.Controls.MaterialLabel materialLabel13;
+        private MaterialSkin.Controls.MaterialSwitch materialSwitch_tb2;
+        private MaterialSkin.Controls.MaterialSwitch materialSwitch_tb1;
     }
 }
 
